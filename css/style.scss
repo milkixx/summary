@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'Uni Sans Thin';
+    src: url('../fonts/UniSansThin.eot');
+    src: url('../fonts/UniSansThin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UniSansThin.woff') format('woff'),
+        url('../fonts/UniSansThin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+a {
+    text-decoration: none;
+    font-family: sans-serif;
+
+}
+
+ul,
+li {
+    padding: 0;
+}
+
+span {
+    color: #000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.header {
+    margin-top: 50px;
+
+
+    &__bg {
+        position: relative;
+        background-color: rgb(0, 0, 0);
+        height: 750px;
+    }
+
+
+    &__phone a {
+
+        position: absolute;
+        right: 370px;
+        top: 100px;
+        font-weight: 400;
+        color: rgb(233, 233, 233);
+        font-size: 24px;
+
+    }
+
+    &__descr {
+        font-family: sans-serif;
+        padding-top: 145px;
+        padding-left: 70px;
+        max-width: 700px;
+        font-size: 20px;
+        color: #f3f3f3;
+
+
+        a {
+            cursor: pointer;
+            text-decoration: underline;
+            color: rgb(255, 255, 255);
+
+        }
+
+        li {
+            list-style: dots;
+            color: rgb(2, 149, 169);
+            margin-left: 30px;
+
+            span {
+                color: #fff;
+            }
+
+
+        }
+    }
+
+    &__line-white,
+    &__line-white2 {
+        position: absolute;
+        top: 50px;
+        left: 70px;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.623);
+        border: 3px solid rgb(2, 149, 169);
+        animation: block 4s infinite;
+
+    }
+
+    &__line-white2 {
+        top: 75px;
+        left: 95px;
+        border: 2.5px solid rgb(255, 255, 255);
+        animation: block2 4s infinite;
+    }
+
+    &__photo img {
+        position: absolute;
+        right: -70px;
+        top: 100px;
+        width: 400px;
+        height: 700px;
+
+    }
+
+    &__name {
+        font-family: 'Uni Sans Thin';
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        position: absolute;
+        right: -50px;
+        bottom: 20px;
+        width: 600px;
+        padding-right: 20px;
+        padding-left: 20px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        font-size: 50px;
+        animation: name 3s;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: -20px;
+            width: 80px;
+            height: 60px;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        span {
+            font-weight: 900;
+            color: rgb(2, 149, 169);
+        }
+    }
+}
+
+.my-social {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-right: 400px;
+
+
+    & a {
+        color: rgb(75, 75, 75);
+        text-transform: uppercase;
+        font-size: 28px;
+
+        &:hover {
+
+            .fa-github,
+            .fa-instagram,
+            .fa-telegram {
+
+                color: rgb(9, 109, 122);
+                animation: git .4s infinite;
+            }
+        }
+
+    }
+
+
+}
+
+@keyframes git {
+    0% {}
+
+    50% {
+        transform: translateY(-10px);
+        height: 10px;
+    }
+
+    100% {}
+}
+
+@keyframes name {
+    0% {
+        filter: blur(30px);
+    }
+
+    100% {
+        filter: blur(0);
+    }
+}
+
+@keyframes block {
+    0% {
+        transform: rotate(-90deg);
+    }
+
+    25% {
+        transform: translateX(30px);
+    }
+
+    50% {
+        transform: rotate(-90deg);
+    }
+
+    75% {
+        transform: translateX(-30px);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+
+}
+
+@keyframes block2 {
+    0% {
+        transform: rotate(-90deg);
+    }
+
+    25% {
+        transform: translateX(30px);
+    }
+
+    50% {
+        transform: rotate(-90deg);
+    }
+
+    75% {
+        transform: translateX(30px);
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
+
+}
