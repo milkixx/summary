@@ -25,7 +25,10 @@ span {
   margin-top: 50px; }
   .header__bg {
     position: relative;
-    background-color: black;
+    background-image: url(../img/153754667966.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 750px; }
   .header__phone a {
     position: absolute;
@@ -46,11 +49,12 @@ span {
       text-decoration: underline;
       color: white; }
     .header__descr li {
-      list-style: dots;
+      list-style: none;
       color: #0295a9;
-      margin-left: 30px; }
+      margin-left: 20px; }
       .header__descr li span {
-        color: #fff; }
+        color: #fff;
+        margin-left: 10px; }
   .header__line-white, .header__line-white2 {
     position: absolute;
     top: 50px;
@@ -98,6 +102,22 @@ span {
     .header__name span {
       font-weight: 900;
       color: #0295a9; }
+  .header p {
+    font-family: 'Uni Sans Thin';
+    font-weight: 700;
+    color: #0295a9;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-left: 20px; }
+    .header p .fa-hand-point-down {
+      color: white;
+      margin-left: 5px;
+      font-size: 28px;
+      -webkit-animation: arrow 1s infinite;
+      animation: arrow 1s infinite; }
+  .header .fa-grin-beam {
+    color: #0295a9;
+    font-size: 18px; }
 
 .my-social {
   display: -webkit-box;
@@ -108,12 +128,19 @@ span {
   margin-top: 25px;
   margin-right: 400px; }
   .my-social a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #4b4b4b;
     text-transform: uppercase;
-    font-size: 28px; }
+    font-size: 22px;
+    letter-spacing: 2px;
+    border-right: 2px solid #616161;
+    padding-right: 15px; }
+    .my-social a:last-child {
+      border: none; }
     .my-social a:hover .fa-github,
     .my-social a:hover .fa-instagram,
-    .my-social a:hover .fa-telegram {
+    .my-social a:hover .fa-telegram,
+    .my-social a:hover .fa-linkedin-in {
       color: #096d7a;
       -webkit-animation: git .4s infinite;
       animation: git .4s infinite; }
@@ -217,3 +244,19 @@ span {
   100% {
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg); } }
+
+@-webkit-keyframes arrow {
+  0% { }
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    height: 10px; }
+  100% { } }
+
+@keyframes arrow {
+  0% { }
+  50% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    height: 10px; }
+  100% { } }

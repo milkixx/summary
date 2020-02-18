@@ -37,7 +37,10 @@ span {
 
     &__bg {
         position: relative;
-        background-color: rgb(0, 0, 0);
+        background-image: url(../img/153754667966.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         height: 750px;
     }
 
@@ -70,12 +73,14 @@ span {
         }
 
         li {
-            list-style: dots;
+            list-style: none;
             color: rgb(2, 149, 169);
-            margin-left: 30px;
+            margin-left: 20px;
+
 
             span {
                 color: #fff;
+                margin-left: 10px;
             }
 
 
@@ -141,6 +146,29 @@ span {
             color: rgb(2, 149, 169);
         }
     }
+
+    p {
+        font-family: 'Uni Sans Thin';
+        font-weight: 700;
+        color: rgb(2, 149, 169);
+        font-size: 24px;
+        margin-top: 50px;
+        margin-left: 20px;
+
+
+        .fa-hand-point-down {
+            color: rgb(255, 255, 255);
+            margin-left: 5px;
+            font-size: 28px;
+            animation: arrow 1s infinite;
+        }
+    }
+
+    .fa-grin-beam {
+        color: rgb(2, 149, 169);
+        font-size: 18px;
+
+    }
 }
 
 .my-social {
@@ -151,15 +179,24 @@ span {
 
 
     & a {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         color: rgb(75, 75, 75);
         text-transform: uppercase;
-        font-size: 28px;
+        font-size: 22px;
+        letter-spacing: 2px;
+        border-right: 2px solid rgb(97, 97, 97);
+        padding-right: 15px;
+
+        &:last-child {
+            border: none;
+        }
 
         &:hover {
 
             .fa-github,
             .fa-instagram,
-            .fa-telegram {
+            .fa-telegram,
+            .fa-linkedin-in {
 
                 color: rgb(9, 109, 122);
                 animation: git .4s infinite;
@@ -236,4 +273,15 @@ span {
         transform: rotate(-90deg);
     }
 
+}
+
+@keyframes arrow {
+    0% {}
+
+    50% {
+        transform: translateY(-10px);
+        height: 10px;
+    }
+
+    100% {}
 }
