@@ -155,13 +155,6 @@ span {
         margin-top: 50px;
         margin-left: 20px;
 
-
-        .fa-hand-point-down {
-            color: rgb(255, 255, 255);
-            margin-left: 5px;
-            font-size: 28px;
-            animation: arrow 1s infinite;
-        }
     }
 
     .fa-grin-beam {
@@ -273,15 +266,4 @@ span {
         transform: rotate(-90deg);
     }
 
-}
-
-@keyframes arrow {
-    0% {}
-
-    50% {
-        transform: translateY(-10px);
-        height: 10px;
-    }
-
-    100% {}
 }
