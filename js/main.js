@@ -2,5 +2,4 @@ $(function () {
 
     AOS.init();
 
-
 });
