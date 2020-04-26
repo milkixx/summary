@@ -17,7 +17,30 @@
 
 <body>
 
-    <header class="header">
+    <header class="header parallax">
+
+        <div class="header-menu__hamberger">
+
+            <nav class="menu-nav">
+                <ul>
+                    <li><a class="link-burger scrollto" href="#about">Обо мне</a></li>
+
+                    <li><a class="link-burger scrollto" href="#skills">Навыки</a></li>
+
+                    <li><a class="link-burger scrollto" href="#work">Работы</a></li>
+
+                    <li><a class="link-burger scrollto" href="#contacts">Контакты</a></li>
+                </ul>
+
+
+
+
+            </nav>
+
+            <div class="hambergerIcon">
+            </div>
+        </div>
+
         <div class="header__inner">
             <h1 class="header__inner-title">Max <br> Milkin </h1>
             <div class="header__inner-text">Front-end Developer</div>
@@ -44,7 +67,7 @@
 
     <section class="intro">
         <div class="container">
-            <div class="intro__inner">
+            <div class="intro__inner" id="about">
                 <div class="intro__inner-title title">Обо мне:</div>
                 <div class="intro__inner-descr">
                     Я Макс, родился 17.03.1990. В 2012 году закончил УИПА и с этого момента активно искал свою
@@ -62,7 +85,7 @@
         </div>
     </section>
 
-    <section class="experience">
+    <section class="experience" id="skills">
         <div class="container">
             <div class="experience__inner">
                 <div class="experience__inner-title title">Навыки:</div>
@@ -82,7 +105,7 @@
         </div>
     </section>
 
-    <section class="works">
+    <section class="works" id="work">
         <div class="container">
             <div class="works__inner">
                 <div class="workes__title title">Работы:</div>
@@ -103,17 +126,19 @@
                         </a>
                     </div>
 
-                    <div class="weebly sparkle" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300"><a
-                            class="link-weebly" href="https://milkixx.github.io/sparkle/" target="blanck">
-                            <img src="img/Sparkle.png" alt="">
+                    <div class="weebly parallax" data-aos="fade-up" data-aos-duration="1500"><a class="link-weebly"
+                            href="https://milkixx.github.io/Parallax/" target="blanck">
+                            <img src="img/Parallax.png" alt="">
 
                             <div class="weebly__descr">
-                                <span class="del">Sparkle -
-                                    Готовое ТЗ, сайт на 18 секций. на сайте имеются 4 slick-slider. Полностью
-                                    адаптирован до 320px</span>
+                                <span class="del">Тренировочный параллакс сайт. Добавил слайдер на сайт. Полностью
+                                    адаптирован до
+                                    320px</span>
                             </div>
                         </a>
                     </div>
+
+
 
                     <div class="weebly fuck" data-aos="fade-up" data-aos-duration="1500"><a class="link-weebly"
                             href="https://milkixx.github.io/portfolio-website-1/" target="blanck">
@@ -150,23 +175,24 @@
                         </a>
                     </div>
 
-                    <div class="weebly parallax" data-aos="fade-up" data-aos-duration="1500"><a class="link-weebly"
-                            href="https://milkixx.github.io/Parallax/" target="blanck">
-                            <img src="img/Parallax.png" alt="">
+                    <div class="weebly sparkle" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300"><a
+                            class="link-weebly" href="https://milkixx.github.io/sparkle/" target="blanck">
+                            <img src="img/Sparkle.png" alt="">
 
                             <div class="weebly__descr">
-                                <span class="del">Тренировочный параллакс сайт. Добавил слайдер на сайт. Полностью
-                                    адаптирован до
-                                    320px</span>
+                                <span class="del">Sparkle -
+                                    Готовое ТЗ, сайт на 18 секций. на сайте имеются 4 slick-slider. Полностью
+                                    адаптирован до 320px</span>
                             </div>
                         </a>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="contacts">
             <div class="container">
                 <div class="contacts__inner">
